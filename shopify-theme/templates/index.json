@@ -1,20 +1,122 @@
 {
     "sections": {
-        "header": {
-            "type": "header",
-            "settings": {}
-        },
         "hero": {
             "type": "hero",
-            "settings": {}
+            "settings": {
+                "trust_badge_text": "Paediatrician Recommended",
+                "headline_1": "Bite. Smile.",
+                "headline_2": "Grow Strong.",
+                "subtitle": "Strawberry-flavoured multivitamin gummies with <strong>11+ vitamins and minerals</strong> for your little one's daily nutritional needs – with <strong>zero added sugar</strong> and 6 real fruits & vegetables.",
+                "rating": "4.4/5",
+                "review_count": 1075,
+                "units_sold": 782,
+                "price": 399,
+                "note_text": "30 gummies · 30 days · For kids 2+ · Free from artificial colours, flavours & preservatives."
+            }
         },
         "benefits": {
             "type": "benefits",
-            "settings": {}
+            "settings": {
+                "tag_text": "Why Choose Us",
+                "title": "Why Parents Love These Gummies"
+            },
+            "blocks": {
+                "block1": {
+                    "type": "benefit",
+                    "settings": {
+                        "icon": "🥗",
+                        "title": "Fills Nutrition Gaps",
+                        "description": "11+ essential vitamins and minerals to support daily nutritional needs in fussy or picky eaters."
+                    }
+                },
+                "block2": {
+                    "type": "benefit",
+                    "settings": {
+                        "icon": "🛡️",
+                        "title": "Boosts Immunity",
+                        "description": "Vitamin C, Turmeric (Curcumin), Vitamin B12 and Zinc help support immunity and reduce seasonal impact."
+                    }
+                },
+                "block3": {
+                    "type": "benefit",
+                    "settings": {
+                        "icon": "🌱",
+                        "title": "Gut-Friendly Prebiotic Base",
+                        "description": "88% of each gummy is chicory root fibre – a prebiotic that supports gut health and better nutrient absorption."
+                    }
+                },
+                "block4": {
+                    "type": "benefit",
+                    "settings": {
+                        "icon": "🦴",
+                        "title": "Bone & Growth Support",
+                        "description": "Vitamin D3 and key co-nutrients aid bone growth, density and overall development."
+                    }
+                },
+                "block5": {
+                    "type": "benefit",
+                    "settings": {
+                        "icon": "🧠",
+                        "title": "Brain & Eye Health",
+                        "description": "Plant-based DHA from flaxseed and Vitamin A support brain development, memory and eye health."
+                    }
+                },
+                "block6": {
+                    "type": "benefit",
+                    "settings": {
+                        "icon": "✨",
+                        "title": "No Junk, Only Good Stuff",
+                        "description": "Zero added sugar, no artificial colours, flavours or preservatives – just clean, kid-approved nutrition."
+                    }
+                }
+            },
+            "block_order": [
+                "block1",
+                "block2",
+                "block3",
+                "block4",
+                "block5",
+                "block6"
+            ]
         },
         "how-it-works": {
             "type": "how-it-works",
-            "settings": {}
+            "settings": {
+                "tag_text": "Simple & Effective",
+                "title": "How These Gummies Help Your Child Every Day",
+                "note_text": "Recommended: 1 gummy per day for kids 2+ years."
+            },
+            "blocks": {
+                "step1": {
+                    "type": "step",
+                    "settings": {
+                        "icon": "🌿",
+                        "title": "Better Gut, Better Absorption",
+                        "description": "Chicory root prebiotic fibre keeps the gut happy, which improves absorption of nutrients from food and the gummies themselves."
+                    }
+                },
+                "step2": {
+                    "type": "step",
+                    "settings": {
+                        "icon": "💪",
+                        "title": "Nutrients to Every Cell",
+                        "description": "Vitamins, minerals and DHA support immunity, bones, brain, eyes and skin from within."
+                    }
+                },
+                "step3": {
+                    "type": "step",
+                    "settings": {
+                        "icon": "📅",
+                        "title": "Daily Habit, Long-Term Benefits",
+                        "description": "One gummy a day for at least 3 months helps build better immunity and fills daily micronutrient gaps."
+                    }
+                }
+            },
+            "block_order": [
+                "step1",
+                "step2",
+                "step3"
+            ]
         },
         "variants": {
             "type": "variants",
@@ -22,31 +124,171 @@
         },
         "ingredients": {
             "type": "ingredients",
-            "settings": {}
+            "settings": {
+                "tag_text": "What's Inside",
+                "title": "Powered by Science-Backed Ingredients"
+            }
         },
         "reviews": {
             "type": "reviews",
-            "settings": {}
+            "settings": {
+                "tag_text": "Real Feedback",
+                "title": "Loved by 1000+ Parents",
+                "rating": "4.4",
+                "review_count": "1,075",
+                "units_sold": "782K"
+            },
+            "blocks": {
+                "review1": {
+                    "type": "review",
+                    "settings": {
+                        "name": "Priya M.",
+                        "date": "Dec 2024",
+                        "stars": "★★★★★",
+                        "title": "Best gummy – no sugar and lots of fibre!",
+                        "text": "Easy way to give vitamins to my picky eater. She thinks it's a strawberry candy but it's actually healthy. Love that it has no added sugar!"
+                    }
+                },
+                "review2": {
+                    "type": "review",
+                    "settings": {
+                        "name": "Ankit S.",
+                        "date": "Nov 2024",
+                        "stars": "★★★★☆",
+                        "title": "Great replacement for chocolate!",
+                        "text": "Kids enjoy it as a treat after dinner. Happy that they're getting vitamins instead of empty sugar. Ordering the 60-pack next time."
+                    }
+                },
+                "review3": {
+                    "type": "review",
+                    "settings": {
+                        "name": "Sneha R.",
+                        "date": "Oct 2024",
+                        "stars": "★★★★★",
+                        "title": "Fewer colds, happier mornings!",
+                        "text": "Fun way to increase immunity – noticed fewer colds and runny noses this season. My 4-year-old reminds me every day for her vitamin bear!"
+                    }
+                },
+                "review4": {
+                    "type": "review",
+                    "settings": {
+                        "name": "Rahul K.",
+                        "date": "Sep 2024",
+                        "stars": "★★★★★",
+                        "title": "Paediatrician approved!",
+                        "text": "Our doctor recommended these gummies. The prebiotic fibre base is a nice bonus – helps with my son's digestion too."
+                    }
+                }
+            },
+            "block_order": [
+                "review1",
+                "review2",
+                "review3",
+                "review4"
+            ]
         },
         "trust": {
             "type": "trust",
-            "settings": {}
+            "settings": {
+                "tag_text": "Clean & Safe",
+                "title": "High in Awesomeness,<br>Not in Sugar"
+            },
+            "blocks": {
+                "point1": {
+                    "type": "trust_point",
+                    "settings": {
+                        "text": "Naturally sweetened with chicory root prebiotic fibre"
+                    }
+                },
+                "point2": {
+                    "type": "trust_point",
+                    "settings": {
+                        "text": "Zero added sugar and no artificial colours, flavours or preservatives"
+                    }
+                },
+                "point3": {
+                    "type": "trust_point",
+                    "settings": {
+                        "text": "Paediatrician recommended and tested in certified labs"
+                    }
+                },
+                "quote": {
+                    "type": "quote",
+                    "settings": {
+                        "quote": "As a mom and doctor, keeping kids' bodies nourished and their gut healthy is non-negotiable. That's why these gummies #KickSugar and keep only the good stuff.",
+                        "author": "Dr. Meghna, Paediatrician & Mom"
+                    }
+                }
+            },
+            "block_order": [
+                "point1",
+                "point2",
+                "point3",
+                "quote"
+            ]
         },
         "faq": {
             "type": "faq",
-            "settings": {}
+            "settings": {
+                "tag_text": "Got Questions?",
+                "title": "Questions Parents Often Ask"
+            },
+            "blocks": {
+                "faq1": {
+                    "type": "faq",
+                    "settings": {
+                        "question": "How are these gummies sweet without sugar?",
+                        "answer": "They're sweetened naturally with chicory root fibre, a prebiotic that supports gut health and does not spike blood sugar."
+                    }
+                },
+                "faq2": {
+                    "type": "faq",
+                    "settings": {
+                        "question": "How many gummies per day?",
+                        "answer": "One gummy a day for kids 2+ is recommended. It is safe for healthy children to have up to 3 at once occasionally, but they are not candies."
+                    }
+                },
+                "faq3": {
+                    "type": "faq",
+                    "settings": {
+                        "question": "How long before we see results?",
+                        "answer": "Immunity and nutritional status build over 90+ days of consistent daily use along with a balanced diet."
+                    }
+                },
+                "faq4": {
+                    "type": "faq",
+                    "settings": {
+                        "question": "Are there any side effects?",
+                        "answer": "The gummies are vegetarian, with no added sugar and no artificial colours, flavours or preservatives, and are generally well-tolerated in healthy kids."
+                    }
+                },
+                "faq5": {
+                    "type": "faq",
+                    "settings": {
+                        "question": "Are they a replacement for meals?",
+                        "answer": "No, they supplement a balanced diet and are not a meal replacement. They help fill the micronutrient gaps that regular meals might miss."
+                    }
+                }
+            },
+            "block_order": [
+                "faq1",
+                "faq2",
+                "faq3",
+                "faq4",
+                "faq5"
+            ]
         },
         "final-cta": {
             "type": "final-cta",
-            "settings": {}
-        },
-        "footer": {
-            "type": "footer",
-            "settings": {}
+            "settings": {
+                "title": "Make Nutrition Their<br><span class=\"highlight\">Favourite Habit</span>",
+                "subtitle": "One tasty gummy a day to support immunity, growth and overall health – without added sugar.",
+                "price": 399,
+                "price_details": "30 Gummies · 30 Days Pack"
+            }
         }
     },
     "order": [
-        "header",
         "hero",
         "benefits",
         "how-it-works",
@@ -55,7 +297,6 @@
         "reviews",
         "trust",
         "faq",
-        "final-cta",
-        "footer"
+        "final-cta"
     ]
 }

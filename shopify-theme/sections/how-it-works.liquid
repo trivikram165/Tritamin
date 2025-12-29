@@ -7,15 +7,15 @@
     </div>
     <div class="steps-container">
       {% for block in section.blocks %}
-        {% unless forloop.first %}
-          <div class="step-connector"></div>
-        {% endunless %}
         <div class="step fade-in" {{ block.shopify_attributes }}>
           <div class="step-number">{{ forloop.index }}</div>
           <div class="step-icon">{{ block.settings.icon }}</div>
           <h3 class="step-title">{{ block.settings.title }}</h3>
           <p class="step-desc">{{ block.settings.description }}</p>
         </div>
+        {% unless forloop.last %}
+          <div class="step-connector"></div>
+        {% endunless %}
       {% endfor %}
     </div>
     <div class="steps-note fade-in">

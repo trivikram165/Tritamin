@@ -94,16 +94,16 @@
 
   <!-- Main Content -->
   <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-    {{ "accessibility.skip_to_text" | t }}
+    Skip to content
   </a>
 
-  {% sections 'header-group' %}
+  {% section 'header' %}
 
   <main id="MainContent" role="main" tabindex="-1">
     {{ content_for_layout }}
   </main>
 
-  {% sections 'footer-group' %}
+  {% section 'footer' %}
 
   <!-- Mobile Sticky Bar -->
   <div class="mobile-sticky-bar" id="mobile-sticky-bar">
