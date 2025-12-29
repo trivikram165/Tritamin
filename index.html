@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tritamin Multivitamin Gummies 2+ | 11+ Vitamins for Kids | Zero Added Sugar</title>
+    <meta name="description"
+        content="Strawberry-flavoured multivitamin gummies with 11+ vitamins and minerals for kids 2+. Zero added sugar, paediatrician recommended, 88% prebiotic fibre base.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-content">
+            <div class="loader-gummy">🍓</div>
+            <div class="loader-text">Loading yummy goodness...</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Animated Gradient Background -->
+    <div class="animated-gradient-bg"></div>
+
+    <!-- Floating Particles Container -->
+    <div class="particles-container" id="particles-container"></div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti-container"></div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-container">
+            <button class="close-search" id="close-search">×</button>
+            <input type="text" class="search-input" placeholder="Search for ingredients, benefits...">
+            <p class="search-hint">Try "Vitamin C", "Immunity", "Sugar"</p>
+        </div>
+    </div>
+
+    <!-- Lab Report Modal -->
+    <div class="modal-backdrop" id="lab-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="close-lab-modal">×</button>
+            <div class="modal-header">
+                <h3>Certificate of Analysis</h3>
+                <span class="verified-badge">✓ Verified Safe</span>
+            </div>
+            <div class="modal-body">
+                <img src="assets/certificates/lab_report.png" alt="Lab Test Report" class="lab-report-img">
+                <div class="lab-details">
+                    <p><strong>Tested for:</strong> Heavy Metals, Microbials, Pesticides</p>
+                    <p><strong>Result:</strong> PASSED (All parameters within safe limits)</p>
+                    <p><strong>Lab:</strong> Eurofins Certified Lab</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍓</span>
+                Tritamin
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#ingredients" class="nav-link">Ingredients</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <button class="search-btn" id="search-trigger" aria-label="Search">🔍</button>
+            </nav>
+            <a href="#buy" class="btn btn-primary header-cta pulse">Buy Now</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="#benefits" class="mobile-nav-link">Benefits</a>
+        <a href="#ingredients" class="mobile-nav-link">Ingredients</a>
+        <a href="#reviews" class="mobile-nav-link">Reviews</a>
+        <a href="#faq" class="mobile-nav-link">FAQs</a>
+        <a href="#buy" class="btn btn-primary mobile-nav-cta">Buy Now – ₹399</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-shapes">
+                <div class="blob blob-1 parallax-shape"></div>
+                <div class="blob blob-2 parallax-shape"></div>
+                <div class="blob blob-3 parallax-shape"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge-row">
+                        <span class="hero-trust-badge">🩺 Paediatrician Recommended</span>
+                    </div>
+                    <h1 class="hero-title">Bite. Smile.<br><span class="highlight">Grow Strong.</span></h1>
+                    <p class="hero-subtitle">
+                        Strawberry-flavoured multivitamin gummies with <strong>11+ vitamins and minerals</strong> for
+                        your little one's daily nutritional needs – with <strong>zero added sugar</strong> and 6 real
+                        fruits & vegetables.
+                    </p>
+                    <div class="hero-rating">
+                        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span></div>
+                        <span class="rating-text">Rated <strong>4.4/5</strong> by <span class="count-up"
+                                data-target="1075">0</span>+ parents · <span class="count-up"
+                                data-target="782">0</span>K units sold</span>
+                    </div>
+                    <div class="hero-cta-group">
+                        <a href="#buy" class="btn btn-primary btn-lg">Buy Now – ₹399 <span class="btn-sub">Incl. of all
+                                taxes</span></a>
+                        <a href="#how-it-works" class="btn btn-secondary btn-lg">See How It Works</a>
+                    </div>
+                    <p class="hero-note">
+                        30 gummies · 30 days · For kids 2+ · Free from artificial colours, flavours & preservatives.
+                    </p>
+                </div>
+                <div class="hero-product">
+                    <div class="product-image-wrapper">
+                        <img src="assets/product-3d.jpg" alt="Tritamin Multivitamin Gummies Pack" class="product-image"
+                            id="product-image">
+                        <div class="floating-gummies">
+                            <span class="gummy gummy-1">🍓</span>
+                            <span class="gummy gummy-2">🍊</span>
+                            <span class="gummy gummy-3">🍋</span>
+                        </div>
+                    </div>
+                    <div class="hero-badges">
+                        <div class="badge badge-purple">
+                            <span class="badge-icon">💊</span>
+                            <span>11+ Vitamins & Minerals</span>
+                        </div>
+                        <div class="badge badge-green">
+                            <span class="badge-icon">🚫</span>
+                            <span>Zero Added Sugar</span>
+                        </div>
+                        <div class="badge badge-orange">
+                            <span class="badge-icon">🌿</span>
+                            <span>88% Prebiotic Fibre</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Benefits Section -->
+        <section class="benefits" id="benefits">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Why Choose Us</span>
+                    <h2 class="section-title">Why Parents Love These Gummies</h2>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card tilt-card fade-in">
+                        <div class="benefit-icon">🥗</div>
+                        <h3 class="benefit-title">Fills Nutrition Gaps</h3>
+                        <p class="benefit-desc">11+ essential vitamins and minerals to support daily nutritional needs
+                            in fussy or picky eaters.</p>
+                    </div>
+                    <div class="benefit-card tilt-card fade-in">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3 class="benefit-title">Boosts Immunity</h3>
+                        <p class="benefit-desc">Vitamin C, Turmeric (Curcumin), Vitamin B12 and Zinc help support
+                            immunity and reduce seasonal impact.</p>
+                    </div>
+                    <div class="benefit-card tilt-card fade-in">
+                        <div class="benefit-icon">🌱</div>
+                        <h3 class="benefit-title">Gut-Friendly Prebiotic Base</h3>
+                        <p class="benefit-desc">88% of each gummy is chicory root fibre – a prebiotic that supports gut
+                            health and better nutrient absorption.</p>
+                    </div>
+                    <div class="benefit-card tilt-card fade-in">
+                        <div class="benefit-icon">🦴</div>
+                        <h3 class="benefit-title">Bone & Growth Support</h3>
+                        <p class="benefit-desc">Vitamin D3 and key co-nutrients aid bone growth, density and overall
+                            development.</p>
+                    </div>
+                    <div class="benefit-card tilt-card fade-in">
+                        <div class="benefit-icon">🧠</div>
+                        <h3 class="benefit-title">Brain & Eye Health</h3>
+                        <p class="benefit-desc">Plant-based DHA from flaxseed and Vitamin A support brain development,
+                            memory and eye health.</p>
+                    </div>
+                    <div class="benefit-card tilt-card fade-in">
+                        <div class="benefit-icon">✨</div>
+                        <h3 class="benefit-title">No Junk, Only Good Stuff</h3>
+                        <p class="benefit-desc">Zero added sugar, no artificial colours, flavours or preservatives –
+                            just clean, kid-approved nutrition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Simple & Effective</span>
+                    <h2 class="section-title">How These Gummies Help Your Child Every Day</h2>
+                </div>
+                <div class="steps-container">
+                    <div class="step fade-in">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">🌿</div>
+                        <h3 class="step-title">Better Gut, Better Absorption</h3>
+                        <p class="step-desc">Chicory root prebiotic fibre keeps the gut happy, which improves absorption
+                            of nutrients from food and the gummies themselves.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step fade-in">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">💪</div>
+                        <h3 class="step-title">Nutrients to Every Cell</h3>
+                        <p class="step-desc">Vitamins, minerals and DHA support immunity, bones, brain, eyes and skin
+                            from within.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step fade-in">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">📅</div>
+                        <h3 class="step-title">Daily Habit, Long-Term Benefits</h3>
+                        <p class="step-desc">One gummy a day for at least 3 months helps build better immunity and fills
+                            daily micronutrient gaps.</p>
+                    </div>
+                </div>
+                <div class="steps-note fade-in">
+                    <span class="note-icon">💡</span>
+                    <span>Recommended: 1 gummy per day for kids 2+ years.</span>
+                </div>
+
+                <!-- Dosage Calculator -->
+                <div class="dosage-calculator fade-in">
+                    <h3>Dosage Calculator</h3>
+                    <div class="calc-inner">
+                        <label>Child's Age:</label>
+                        <input type="range" min="2" max="18" value="4" class="age-slider" id="age-slider">
+                        <div class="calc-output">
+                            <span id="age-display">4 years</span>
+                            <span class="arrow">→</span>
+                            <span class="dosage-result" id="dosage-result">1 Gummy / Day</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Variants Section -->
+        <section class="variants" id="variants">
+            <div class="container">
+                <div class="variants-inner fade-in">
+                    <div class="variant-group">
+                        <span class="variant-label">Age Group</span>
+                        <div class="variant-pills">
+                            <button class="pill pill-active">2–6 years</button>
+                            <button class="pill pill-muted">7–12 years</button>
+                            <button class="pill pill-muted">13–18 years</button>
+                            <button class="pill pill-muted">For Moms</button>
+                        </div>
+                    </div>
+                    <div class="variant-group">
+                        <span class="variant-label">Health Concern</span>
+                        <div class="variant-pills">
+                            <button class="pill pill-active">Immunity</button>
+                            <button class="pill pill-muted">Brain Health</button>
+                            <button class="pill pill-muted">Calcium</button>
+                        </div>
+                    </div>
+                    <div class="variant-group">
+                        <span class="variant-label">Pack Size</span>
+                        <div class="variant-pills">
+                            <button class="pill pill-active">30 N <span class="pill-price">₹17/pc</span></button>
+                            <button class="pill pill-muted">60 N <span class="pill-price pill-save">₹14/pc · Save
+                                    18%</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ingredients Section -->
+        <section class="ingredients" id="ingredients">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">What's Inside</span>
+                    <h2 class="section-title">Powered by Science-Backed Ingredients</h2>
+                </div>
+                <div class="ingredients-tabs fade-in">
+                    <button class="tab-btn tab-active" data-tab="vitamins">Vitamins & Minerals</button>
+                    <button class="tab-btn" data-tab="natural">Natural Ingredients</button>
+                </div>
+                <div class="ingredients-content">
+                    <div class="tab-content tab-content-active" id="vitamins">
+                        <div class="ingredients-grid">
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">Vitamin A</span>
+                                    <span class="ingredient-amount">510 mcg</span>
+                                </div>
+                                <p class="ingredient-benefit">Supports eye health and immunity; common deficiency in
+                                    preschool kids.</p>
+                            </div>
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">Vitamin D3</span>
+                                    <span class="ingredient-amount">600 IU</span>
+                                </div>
+                                <p class="ingredient-benefit">Supports calcium absorption and bone growth.</p>
+                            </div>
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">Vitamin C</span>
+                                    <span class="ingredient-amount">20 mg</span>
+                                </div>
+                                <p class="ingredient-benefit">Helps immune function, wound healing and keeps infections
+                                    at bay.</p>
+                            </div>
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">Vitamin B12</span>
+                                    <span class="ingredient-amount">2.2 mcg</span>
+                                </div>
+                                <p class="ingredient-benefit">Supports energy production and brain development,
+                                    especially for vegetarian diets.</p>
+                            </div>
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">Vitamin B9 (Folate)</span>
+                                    <span class="ingredient-amount">102 mcg</span>
+                                </div>
+                                <p class="ingredient-benefit">Supports nervous system and brain development.</p>
+                            </div>
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">Zinc</span>
+                                    <span class="ingredient-amount">1 mg</span>
+                                </div>
+                                <p class="ingredient-benefit">Supports growth, immunity and cognitive development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="natural">
+                        <div class="ingredients-grid">
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">Curcumin (Turmeric)</span>
+                                    <span class="ingredient-amount">5 mg</span>
+                                </div>
+                                <p class="ingredient-benefit">Anti-inflammatory and antioxidant support.</p>
+                            </div>
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">DHA (Flaxseed)</span>
+                                    <span class="ingredient-amount">15 mg</span>
+                                </div>
+                                <p class="ingredient-benefit">Supports brain structure, learning, memory and immunity.
+                                </p>
+                            </div>
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">Chicory Root Fibre</span>
+                                    <span class="ingredient-amount">88%</span>
+                                </div>
+                                <p class="ingredient-benefit">Prebiotic base that supports gut health and nutrient
+                                    absorption.</p>
+                            </div>
+                            <div class="ingredient-card fade-in">
+                                <div class="ingredient-header">
+                                    <span class="ingredient-name">6 Real Fruits & Veggies</span>
+                                    <span class="ingredient-amount">Natural</span>
+                                </div>
+                                <p class="ingredient-benefit">Strawberry, orange, carrot, beetroot, spinach and more for
+                                    natural goodness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ingredients-badges fade-in">
+                    <span class="ing-badge">✓ 100% Veg</span>
+                    <span class="ing-badge">✓ No Added Sugar</span>
+                    <span class="ing-badge">✓ No Preservatives</span>
+                    <span class="ing-badge">✓ No Side Effects</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Real Feedback</span>
+                    <h2 class="section-title">Loved by 1000+ Parents</h2>
+                </div>
+                <div class="reviews-summary fade-in">
+                    <div class="reviews-rating">
+                        <span class="rating-number">4.4</span>
+                        <span class="rating-star">★</span>
+                    </div>
+                    <div class="reviews-stats">
+                        <span class="reviews-count">1,075 Reviews</span>
+                        <span class="reviews-sold">782K+ units sold</span>
+                    </div>
+                </div>
+                <div class="reviews-carousel fade-in">
+                    <div class="reviews-track" id="reviews-track">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="assets/avatar_p.png" alt="Priya M." class="reviewer-img">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">Priya M.</span>
+                                    <span class="review-date">Dec 2024</span>
+                                </div>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                            <h4 class="review-title">Best gummy – no sugar and lots of fibre!</h4>
+                            <p class="review-text">Easy way to give vitamins to my picky eater. She thinks it's a
+                                strawberry candy but it's actually healthy. Love that it has no added sugar!</p>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="assets/avatar_a.png" alt="Ankit S." class="reviewer-img">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">Ankit S.</span>
+                                    <span class="review-date">Nov 2024</span>
+                                </div>
+                                <div class="review-stars">★★★★☆</div>
+                            </div>
+                            <h4 class="review-title">Great replacement for chocolate!</h4>
+                            <p class="review-text">Kids enjoy it as a treat after dinner. Happy that they're getting
+                                vitamins instead of empty sugar. Ordering the 60-pack next time.</p>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="assets/avatar_s.png" alt="Sneha R." class="reviewer-img">
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">Sneha R.</span>
+                                    <span class="review-date">Oct 2024</span>
+                                </div>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                            <h4 class="review-title">Fewer colds, happier mornings!</h4>
+                            <p class="review-text">Fun way to increase immunity – noticed fewer colds and runny noses
+                                this season. My 4-year-old reminds me every day for her "vitamin bear"!</p>
+                        </div>
+                        <div class="review-card">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">R</div>
+                                <div class="reviewer-info">
+                                    <span class="reviewer-name">Rahul K.</span>
+                                    <span class="review-date">Sep 2024</span>
+                                </div>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                            <h4 class="review-title">Paediatrician approved!</h4>
+                            <p class="review-text">Our doctor recommended these gummies. The prebiotic fibre base is a
+                                nice bonus – helps with my son's digestion too.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn carousel-prev" id="carousel-prev">←</button>
+                        <button class="carousel-btn carousel-next" id="carousel-next">→</button>
+                    </div>
+                </div>
+                <a href="#" class="reviews-link fade-in">Read all reviews →</a>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust" id="trust">
+            <div class="container">
+                <div class="trust-inner fade-in">
+                    <div class="trust-content">
+                        <span class="section-tag">Clean & Safe</span>
+                        <h2 class="trust-title">High in Awesomeness,<br>Not in Sugar</h2>
+                        <ul class="trust-list">
+                            <li>✓ Naturally sweetened with chicory root prebiotic fibre</li>
+                            <li>✓ Zero added sugar and no artificial colours, flavours or preservatives</li>
+                            <li>✓ Paediatrician recommended and tested in certified labs</li>
+                        </ul>
+                        <blockquote class="trust-quote">
+                            <p>"As a mom and doctor, keeping kids' bodies nourished and their gut healthy is
+                                non-negotiable. That's why these gummies #KickSugar and keep only the good stuff."</p>
+                            <cite>— Dr. Meghna, Paediatrician & Mom</cite>
+                        </blockquote>
+                    </div>
+                    <div class="trust-visual">
+                        <div class="trust-image-wrapper">
+                            <div class="trust-badge-card">
+                                <span class="trust-badge-icon">🔬</span>
+                                <span class="trust-badge-text">Lab Tested</span>
+                            </div>
+                            <div class="trust-badge-card">
+                                <span class="trust-badge-icon">🩺</span>
+                                <span class="trust-badge-text">Doctor Approved</span>
+                            </div>
+                            <div class="trust-badge-card">
+                                <span class="trust-badge-icon">🌿</span>
+                                <span class="trust-badge-text">100% Vegetarian</span>
+                            </div>
+                        </div>
+                        <a href="#" class="trust-cert-link">View Lab Certificate →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Got Questions?</span>
+                    <h2 class="section-title">Questions Parents Often Ask</h2>
+                </div>
+                <div class="faq-list fade-in">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How are these gummies sweet without sugar?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>They're sweetened naturally with chicory root fibre, a prebiotic that supports gut health
+                                and does not spike blood sugar.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How many gummies per day?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>One gummy a day for kids 2+ is recommended. It is safe for healthy children to have up to
+                                3 at once occasionally, but they are not candies.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How long before we see results?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Immunity and nutritional status build over 90+ days of consistent daily use along with a
+                                balanced diet.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Are there any side effects?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The gummies are vegetarian, with no added sugar and no artificial colours, flavours or
+                                preservatives, and are generally well-tolerated in healthy kids.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Are they a replacement for meals?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No, they supplement a balanced diet and are not a meal replacement. They help fill the
+                                micronutrient gaps that regular meals might miss.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta" id="buy">
+            <div class="container">
+                <div class="final-cta-inner fade-in">
+                    <div class="final-cta-product">
+                        <img src="assets/product-3d.jpg" alt="Tritamin Multivitamin Gummies"
+                            class="final-product-image">
+                    </div>
+                    <div class="final-cta-content">
+                        <h2 class="final-cta-title">Make Nutrition Their<br><span class="highlight">Favourite
+                                Habit</span></h2>
+                        <p class="final-cta-subtitle">One tasty gummy a day to support immunity, growth and overall
+                            health – without added sugar.</p>
+                        <div class="final-cta-price">
+                            <span class="price">₹399</span>
+                            <span class="price-details">30 Gummies · 30 Days Pack</span>
+                        </div>
+                        <div class="final-cta-buttons">
+                            <a href="#" class="btn btn-primary btn-xl">Add to Cart</a>
+                            <a href="#ingredients" class="final-cta-link">See full ingredients & lab report →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍓</span>
+                    Tritamin
+                </div>
+                <p class="footer-text">Nutrition made fun for your little ones.</p>
+                <div class="footer-badges">
+                    <span class="trust-icon">🔒 SSL Secure</span>
+                    <span class="trust-icon">💳 Safe Payment</span>
+                    <span class="trust-icon">✅ FSSAI Certified</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+        <div class="mobile-sticky-price">
+            <span class="mobile-price">₹399</span>
+            <span class="mobile-price-sub">30 Days Pack</span>
+        </div>
+        <a href="#buy" class="btn btn-primary mobile-sticky-btn">Buy Now</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
