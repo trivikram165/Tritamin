@@ -1,0 +1,119 @@
+<!-- Key Benefits Section -->
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">{{ section.settings.tag_text }}</span>
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+    </div>
+    <div class="benefits-grid">
+      {% for block in section.blocks %}
+        <div class="benefit-card tilt-card fade-in" {{ block.shopify_attributes }}>
+          <div class="benefit-icon">{{ block.settings.icon }}</div>
+          <h3 class="benefit-title">{{ block.settings.title }}</h3>
+          <p class="benefit-desc">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Benefits",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Section Tag",
+      "default": "Why Choose Us"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Why Parents Love These Gummies"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Emoji Icon",
+          "default": "🥗"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Fills Nutrition Gaps"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "11+ essential vitamins and minerals to support daily nutritional needs in fussy or picky eaters."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefits",
+      "blocks": [
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "🥗",
+            "title": "Fills Nutrition Gaps",
+            "description": "11+ essential vitamins and minerals to support daily nutritional needs in fussy or picky eaters."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "🛡️",
+            "title": "Boosts Immunity",
+            "description": "Vitamin C, Turmeric (Curcumin), Vitamin B12 and Zinc help support immunity and reduce seasonal impact."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "🌱",
+            "title": "Gut-Friendly Prebiotic Base",
+            "description": "88% of each gummy is chicory root fibre – a prebiotic that supports gut health and better nutrient absorption."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "🦴",
+            "title": "Bone & Growth Support",
+            "description": "Vitamin D3 and key co-nutrients aid bone growth, density and overall development."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "🧠",
+            "title": "Brain & Eye Health",
+            "description": "Plant-based DHA from flaxseed and Vitamin A support brain development, memory and eye health."
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": {
+            "icon": "✨",
+            "title": "No Junk, Only Good Stuff",
+            "description": "Zero added sugar, no artificial colours, flavours or preservatives – just clean, kid-approved nutrition."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,42 @@
+<!-- Header Section -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="{{ routes.root_url }}" class="logo">
+      <span class="logo-icon">🍓</span>
+      {{ shop.name }}
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#benefits" class="nav-link">Benefits</a>
+      <a href="#ingredients" class="nav-link">Ingredients</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <button class="search-btn" id="search-trigger" aria-label="Search">🔍</button>
+    </nav>
+    <a href="#buy" class="btn btn-primary header-cta pulse">Buy Now</a>
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Navigation -->
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="#benefits" class="mobile-nav-link">Benefits</a>
+  <a href="#ingredients" class="mobile-nav-link">Ingredients</a>
+  <a href="#reviews" class="mobile-nav-link">Reviews</a>
+  <a href="#faq" class="mobile-nav-link">FAQs</a>
+  <a href="#buy" class="btn btn-primary mobile-nav-cta">Buy Now – ₹399</a>
+</nav>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Header"
+    }
+  ]
+}
+{% endschema %}

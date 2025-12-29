@@ -1,0 +1,36 @@
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🍓</span>
+        {{ shop.name }}
+      </div>
+      <p class="footer-text">{{ section.settings.tagline }}</p>
+      <div class="footer-badges">
+        <span class="trust-icon">🔒 SSL Secure</span>
+        <span class="trust-icon">💳 Safe Payment</span>
+        <span class="trust-icon">✅ FSSAI Certified</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "Nutrition made fun for your little ones."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer"
+    }
+  ]
+}
+{% endschema %}

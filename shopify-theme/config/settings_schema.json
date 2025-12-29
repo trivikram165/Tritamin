@@ -1,0 +1,81 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Tritamin",
+    "theme_version": "1.0.0",
+    "theme_author": "Tritamin",
+    "theme_documentation_url": "https://tritamin.com",
+    "theme_support_url": "https://tritamin.com/support"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Brand Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_strawberry",
+        "label": "Primary (Strawberry)",
+        "default": "#E63B5A"
+      },
+      {
+        "type": "color",
+        "id": "color_green",
+        "label": "Secondary (Green)",
+        "default": "#2D6A4F"
+      },
+      {
+        "type": "color",
+        "id": "color_orange",
+        "label": "Accent (Orange)",
+        "default": "#E56B4F"
+      },
+      {
+        "type": "color",
+        "id": "color_purple",
+        "label": "Accent (Purple)",
+        "default": "#6B5B95"
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Social accounts"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram",
+        "info": "https://instagram.com/tritamin"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook",
+        "info": "https://facebook.com/tritamin"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter",
+        "info": "https://twitter.com/tritamin"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "32 x 32px recommended"
+      }
+    ]
+  }
+]

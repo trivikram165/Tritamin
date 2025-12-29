@@ -1,0 +1,104 @@
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">{{ section.settings.tag_text }}</span>
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+    </div>
+    <div class="faq-list fade-in">
+      {% for block in section.blocks %}
+        <div class="faq-item" {{ block.shopify_attributes }}>
+          <button class="faq-question">
+            <span>{{ block.settings.question }}</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>{{ block.settings.answer }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Section Tag",
+      "default": "Got Questions?"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Questions Parents Often Ask"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "How are these gummies sweet without sugar?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "They're sweetened naturally with chicory root fibre, a prebiotic that supports gut health and does not spike blood sugar."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ",
+      "blocks": [
+        {
+          "type": "faq",
+          "settings": {
+            "question": "How are these gummies sweet without sugar?",
+            "answer": "They're sweetened naturally with chicory root fibre, a prebiotic that supports gut health and does not spike blood sugar."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "How many gummies per day?",
+            "answer": "One gummy a day for kids 2+ is recommended. It is safe for healthy children to have up to 3 at once occasionally, but they are not candies."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "How long before we see results?",
+            "answer": "Immunity and nutritional status build over 90+ days of consistent daily use along with a balanced diet."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Are there any side effects?",
+            "answer": "The gummies are vegetarian, with no added sugar and no artificial colours, flavours or preservatives, and are generally well-tolerated in healthy kids."
+          }
+        },
+        {
+          "type": "faq",
+          "settings": {
+            "question": "Are they a replacement for meals?",
+            "answer": "No, they supplement a balanced diet and are not a meal replacement. They help fill the micronutrient gaps that regular meals might miss."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

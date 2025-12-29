@@ -1,0 +1,77 @@
+<!-- Final CTA Section -->
+<section class="final-cta" id="buy">
+  <div class="container">
+    <div class="final-cta-inner fade-in">
+      <div class="final-cta-product">
+        {% if section.settings.product_image %}
+          <img src="{{ section.settings.product_image | image_url: width: 400 }}" alt="{{ shop.name }} Multivitamin Gummies" class="final-product-image">
+        {% else %}
+          <img src="{{ 'product-3d.jpg' | asset_url }}" alt="{{ shop.name }} Multivitamin Gummies" class="final-product-image">
+        {% endif %}
+      </div>
+      <div class="final-cta-content">
+        <h2 class="final-cta-title">{{ section.settings.title }}</h2>
+        <p class="final-cta-subtitle">{{ section.settings.subtitle }}</p>
+        <div class="final-cta-price">
+          <span class="price">₹{{ section.settings.price }}</span>
+          <span class="price-details">{{ section.settings.price_details }}</span>
+        </div>
+        <div class="final-cta-buttons">
+          {% if section.settings.product != blank %}
+            <a href="{{ section.settings.product.url }}" class="btn btn-primary btn-xl">Add to Cart</a>
+          {% else %}
+            <a href="#" class="btn btn-primary btn-xl">Add to Cart</a>
+          {% endif %}
+          <a href="#ingredients" class="final-cta-link">See full ingredients & lab report →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Final CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Make Nutrition Their<br><span class=\"highlight\">Favourite Habit</span>"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "One tasty gummy a day to support immunity, growth and overall health – without added sugar."
+    },
+    {
+      "type": "number",
+      "id": "price",
+      "label": "Price (₹)",
+      "default": 399
+    },
+    {
+      "type": "text",
+      "id": "price_details",
+      "label": "Price Details",
+      "default": "30 Gummies · 30 Days Pack"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Link to Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Final CTA"
+    }
+  ]
+}
+{% endschema %}

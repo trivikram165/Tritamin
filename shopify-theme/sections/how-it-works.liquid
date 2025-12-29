@@ -1,0 +1,123 @@
+<!-- How It Works Section -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">{{ section.settings.tag_text }}</span>
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+    </div>
+    <div class="steps-container">
+      {% for block in section.blocks %}
+        {% unless forloop.first %}
+          <div class="step-connector"></div>
+        {% endunless %}
+        <div class="step fade-in" {{ block.shopify_attributes }}>
+          <div class="step-number">{{ forloop.index }}</div>
+          <div class="step-icon">{{ block.settings.icon }}</div>
+          <h3 class="step-title">{{ block.settings.title }}</h3>
+          <p class="step-desc">{{ block.settings.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="steps-note fade-in">
+      <span class="note-icon">💡</span>
+      <span>{{ section.settings.note_text }}</span>
+    </div>
+
+    <!-- Dosage Calculator -->
+    <div class="dosage-calculator fade-in">
+      <h3>Dosage Calculator</h3>
+      <div class="calc-inner">
+        <label>Child's Age:</label>
+        <input type="range" min="2" max="18" value="4" class="age-slider" id="age-slider">
+        <div class="calc-output">
+          <span id="age-display">4 years</span>
+          <span class="arrow">→</span>
+          <span class="dosage-result" id="dosage-result">1 Gummy / Day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "How It Works",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Section Tag",
+      "default": "Simple & Effective"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "How These Gummies Help Your Child Every Day"
+    },
+    {
+      "type": "text",
+      "id": "note_text",
+      "label": "Note Text",
+      "default": "Recommended: 1 gummy per day for kids 2+ years."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Emoji Icon",
+          "default": "🌿"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Better Gut, Better Absorption"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Chicory root prebiotic fibre keeps the gut happy, which improves absorption of nutrients from food and the gummies themselves."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How It Works",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "icon": "🌿",
+            "title": "Better Gut, Better Absorption",
+            "description": "Chicory root prebiotic fibre keeps the gut happy, which improves absorption of nutrients from food and the gummies themselves."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "💪",
+            "title": "Nutrients to Every Cell",
+            "description": "Vitamins, minerals and DHA support immunity, bones, brain, eyes and skin from within."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "📅",
+            "title": "Daily Habit, Long-Term Benefits",
+            "description": "One gummy a day for at least 3 months helps build better immunity and fills daily micronutrient gaps."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,43 @@
+<!-- Product Variants Section -->
+<section class="variants" id="variants">
+  <div class="container">
+    <div class="variants-inner fade-in">
+      <div class="variant-group">
+        <span class="variant-label">Age Group</span>
+        <div class="variant-pills">
+          <button class="pill pill-active">2–6 years</button>
+          <button class="pill pill-muted">7–12 years</button>
+          <button class="pill pill-muted">13–18 years</button>
+          <button class="pill pill-muted">For Moms</button>
+        </div>
+      </div>
+      <div class="variant-group">
+        <span class="variant-label">Health Concern</span>
+        <div class="variant-pills">
+          <button class="pill pill-active">Immunity</button>
+          <button class="pill pill-muted">Brain Health</button>
+          <button class="pill pill-muted">Calcium</button>
+        </div>
+      </div>
+      <div class="variant-group">
+        <span class="variant-label">Pack Size</span>
+        <div class="variant-pills">
+          <button class="pill pill-active">30 N <span class="pill-price">₹17/pc</span></button>
+          <button class="pill pill-muted">60 N <span class="pill-price pill-save">₹14/pc · Save 18%</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Variants Selector",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Variants Selector"
+    }
+  ]
+}
+{% endschema %}

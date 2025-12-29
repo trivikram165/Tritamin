@@ -1,0 +1,174 @@
+<!-- Reviews Section -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">{{ section.settings.tag_text }}</span>
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+    </div>
+    <div class="reviews-summary fade-in">
+      <div class="reviews-rating">
+        <span class="rating-number">{{ section.settings.rating }}</span>
+        <span class="rating-star">★</span>
+      </div>
+      <div class="reviews-stats">
+        <span class="reviews-count">{{ section.settings.review_count }} Reviews</span>
+        <span class="reviews-sold">{{ section.settings.units_sold }}+ units sold</span>
+      </div>
+    </div>
+    <div class="reviews-carousel fade-in">
+      <div class="reviews-track" id="reviews-track">
+        {% for block in section.blocks %}
+          <div class="review-card" {{ block.shopify_attributes }}>
+            <div class="review-header">
+              {% if block.settings.avatar %}
+                <img src="{{ block.settings.avatar | image_url: width: 60 }}" alt="{{ block.settings.name }}" class="reviewer-img">
+              {% else %}
+                <div class="reviewer-avatar">{{ block.settings.name | slice: 0 }}</div>
+              {% endif %}
+              <div class="reviewer-info">
+                <span class="reviewer-name">{{ block.settings.name }}</span>
+                <span class="review-date">{{ block.settings.date }}</span>
+              </div>
+              <div class="review-stars">{{ block.settings.stars }}</div>
+            </div>
+            <h4 class="review-title">{{ block.settings.title }}</h4>
+            <p class="review-text">{{ block.settings.text }}</p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn carousel-prev" id="carousel-prev">←</button>
+        <button class="carousel-btn carousel-next" id="carousel-next">→</button>
+      </div>
+    </div>
+    <a href="#" class="reviews-link fade-in">Read all reviews →</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Section Tag",
+      "default": "Real Feedback"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Loved by 1000+ Parents"
+    },
+    {
+      "type": "text",
+      "id": "rating",
+      "label": "Average Rating",
+      "default": "4.4"
+    },
+    {
+      "type": "text",
+      "id": "review_count",
+      "label": "Total Reviews",
+      "default": "1,075"
+    },
+    {
+      "type": "text",
+      "id": "units_sold",
+      "label": "Units Sold",
+      "default": "782K"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Reviewer Photo"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Reviewer Name",
+          "default": "Priya M."
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Review Date",
+          "default": "Dec 2024"
+        },
+        {
+          "type": "text",
+          "id": "stars",
+          "label": "Star Rating",
+          "default": "★★★★★"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Review Title",
+          "default": "Best gummy – no sugar and lots of fibre!"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Review Text",
+          "default": "Easy way to give vitamins to my picky eater. She thinks it's a strawberry candy but it's actually healthy. Love that it has no added sugar!"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "name": "Priya M.",
+            "date": "Dec 2024",
+            "stars": "★★★★★",
+            "title": "Best gummy – no sugar and lots of fibre!",
+            "text": "Easy way to give vitamins to my picky eater. She thinks it's a strawberry candy but it's actually healthy. Love that it has no added sugar!"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "name": "Ankit S.",
+            "date": "Nov 2024",
+            "stars": "★★★★☆",
+            "title": "Great replacement for chocolate!",
+            "text": "Kids enjoy it as a treat after dinner. Happy that they're getting vitamins instead of empty sugar. Ordering the 60-pack next time."
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "name": "Sneha R.",
+            "date": "Oct 2024",
+            "stars": "★★★★★",
+            "title": "Fewer colds, happier mornings!",
+            "text": "Fun way to increase immunity – noticed fewer colds and runny noses this season. My 4-year-old reminds me every day for her \"vitamin bear\"!"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "name": "Rahul K.",
+            "date": "Sep 2024",
+            "stars": "★★★★★",
+            "title": "Paediatrician approved!",
+            "text": "Our doctor recommended these gummies. The prebiotic fibre base is a nice bonus – helps with my son's digestion too."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,61 @@
+{
+    "sections": {
+        "header": {
+            "type": "header",
+            "settings": {}
+        },
+        "hero": {
+            "type": "hero",
+            "settings": {}
+        },
+        "benefits": {
+            "type": "benefits",
+            "settings": {}
+        },
+        "how-it-works": {
+            "type": "how-it-works",
+            "settings": {}
+        },
+        "variants": {
+            "type": "variants",
+            "settings": {}
+        },
+        "ingredients": {
+            "type": "ingredients",
+            "settings": {}
+        },
+        "reviews": {
+            "type": "reviews",
+            "settings": {}
+        },
+        "trust": {
+            "type": "trust",
+            "settings": {}
+        },
+        "faq": {
+            "type": "faq",
+            "settings": {}
+        },
+        "final-cta": {
+            "type": "final-cta",
+            "settings": {}
+        },
+        "footer": {
+            "type": "footer",
+            "settings": {}
+        }
+    },
+    "order": [
+        "header",
+        "hero",
+        "benefits",
+        "how-it-works",
+        "variants",
+        "ingredients",
+        "reviews",
+        "trust",
+        "faq",
+        "final-cta",
+        "footer"
+    ]
+}

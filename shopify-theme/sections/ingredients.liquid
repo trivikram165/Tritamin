@@ -1,0 +1,126 @@
+<!-- Ingredients Section -->
+<section class="ingredients" id="ingredients">
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-tag">{{ section.settings.tag_text }}</span>
+      <h2 class="section-title">{{ section.settings.title }}</h2>
+    </div>
+    <div class="ingredients-tabs fade-in">
+      <button class="tab-btn tab-active" data-tab="vitamins">Vitamins & Minerals</button>
+      <button class="tab-btn" data-tab="natural">Natural Ingredients</button>
+    </div>
+    <div class="ingredients-content">
+      <!-- Vitamins & Minerals Tab -->
+      <div class="tab-content tab-content-active" id="vitamins">
+        <div class="ingredients-grid">
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">Vitamin A</span>
+              <span class="ingredient-amount">510 mcg</span>
+            </div>
+            <p class="ingredient-benefit">Supports eye health and immunity; common deficiency in preschool kids.</p>
+          </div>
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">Vitamin D3</span>
+              <span class="ingredient-amount">600 IU</span>
+            </div>
+            <p class="ingredient-benefit">Supports calcium absorption and bone growth.</p>
+          </div>
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">Vitamin C</span>
+              <span class="ingredient-amount">20 mg</span>
+            </div>
+            <p class="ingredient-benefit">Helps immune function, wound healing and keeps infections at bay.</p>
+          </div>
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">Vitamin B12</span>
+              <span class="ingredient-amount">2.2 mcg</span>
+            </div>
+            <p class="ingredient-benefit">Supports energy production and brain development, especially for vegetarian diets.</p>
+          </div>
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">Vitamin B9 (Folate)</span>
+              <span class="ingredient-amount">102 mcg</span>
+            </div>
+            <p class="ingredient-benefit">Supports nervous system and brain development.</p>
+          </div>
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">Zinc</span>
+              <span class="ingredient-amount">1 mg</span>
+            </div>
+            <p class="ingredient-benefit">Supports growth, immunity and cognitive development.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Natural Ingredients Tab -->
+      <div class="tab-content" id="natural">
+        <div class="ingredients-grid">
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">Curcumin (Turmeric)</span>
+              <span class="ingredient-amount">5 mg</span>
+            </div>
+            <p class="ingredient-benefit">Anti-inflammatory and antioxidant support.</p>
+          </div>
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">DHA (Flaxseed)</span>
+              <span class="ingredient-amount">15 mg</span>
+            </div>
+            <p class="ingredient-benefit">Supports brain structure, learning, memory and immunity.</p>
+          </div>
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">Chicory Root Fibre</span>
+              <span class="ingredient-amount">88%</span>
+            </div>
+            <p class="ingredient-benefit">Prebiotic base that supports gut health and nutrient absorption.</p>
+          </div>
+          <div class="ingredient-card fade-in">
+            <div class="ingredient-header">
+              <span class="ingredient-name">6 Real Fruits & Veggies</span>
+              <span class="ingredient-amount">Natural</span>
+            </div>
+            <p class="ingredient-benefit">Strawberry, orange, carrot, beetroot, spinach and more for natural goodness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ingredients-badges fade-in">
+      <span class="ing-badge">✓ 100% Veg</span>
+      <span class="ing-badge">✓ No Added Sugar</span>
+      <span class="ing-badge">✓ No Preservatives</span>
+      <span class="ing-badge">✓ No Side Effects</span>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ingredients",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Section Tag",
+      "default": "What's Inside"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Powered by Science-Backed Ingredients"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ingredients"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,126 @@
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-bg-shapes">
+    <div class="blob blob-1 parallax-shape"></div>
+    <div class="blob blob-2 parallax-shape"></div>
+    <div class="blob blob-3 parallax-shape"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <div class="hero-badge-row">
+        <span class="hero-trust-badge">🩺 {{ section.settings.trust_badge_text }}</span>
+      </div>
+      <h1 class="hero-title">{{ section.settings.headline_1 }}<br><span class="highlight">{{ section.settings.headline_2 }}</span></h1>
+      <p class="hero-subtitle">
+        {{ section.settings.subtitle }}
+      </p>
+      <div class="hero-rating">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span></div>
+        <span class="rating-text">Rated <strong>{{ section.settings.rating }}</strong> by <span class="count-up" data-target="{{ section.settings.review_count }}">0</span>+ parents · <span class="count-up" data-target="{{ section.settings.units_sold }}">0</span>K units sold</span>
+      </div>
+      <div class="hero-cta-group">
+        <a href="#buy" class="btn btn-primary btn-lg">Buy Now – ₹{{ section.settings.price }} <span class="btn-sub">Incl. of all taxes</span></a>
+        <a href="#how-it-works" class="btn btn-secondary btn-lg">See How It Works</a>
+      </div>
+      <p class="hero-note">
+        {{ section.settings.note_text }}
+      </p>
+    </div>
+    <div class="hero-product">
+      <div class="product-image-wrapper">
+        <img src="{{ section.settings.product_image | default: 'product-3d.jpg' | asset_url }}" alt="{{ shop.name }} Multivitamin Gummies Pack" class="product-image" id="product-image">
+        <div class="floating-gummies">
+          <span class="gummy gummy-1">🍓</span>
+          <span class="gummy gummy-2">🍊</span>
+          <span class="gummy gummy-3">🍋</span>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <div class="badge badge-purple">
+          <span class="badge-icon">💊</span>
+          <span>11+ Vitamins & Minerals</span>
+        </div>
+        <div class="badge badge-green">
+          <span class="badge-icon">🚫</span>
+          <span>Zero Added Sugar</span>
+        </div>
+        <div class="badge badge-orange">
+          <span class="badge-icon">🌿</span>
+          <span>88% Prebiotic Fibre</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "trust_badge_text",
+      "label": "Trust Badge Text",
+      "default": "Paediatrician Recommended"
+    },
+    {
+      "type": "text",
+      "id": "headline_1",
+      "label": "Headline Line 1",
+      "default": "Bite. Smile."
+    },
+    {
+      "type": "text",
+      "id": "headline_2",
+      "label": "Headline Line 2 (Highlighted)",
+      "default": "Grow Strong."
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Strawberry-flavoured multivitamin gummies with <strong>11+ vitamins and minerals</strong> for your little one's daily nutritional needs – with <strong>zero added sugar</strong> and 6 real fruits & vegetables."
+    },
+    {
+      "type": "text",
+      "id": "rating",
+      "label": "Rating",
+      "default": "4.4/5"
+    },
+    {
+      "type": "number",
+      "id": "review_count",
+      "label": "Review Count",
+      "default": 1075
+    },
+    {
+      "type": "number",
+      "id": "units_sold",
+      "label": "Units Sold (in K)",
+      "default": 782
+    },
+    {
+      "type": "number",
+      "id": "price",
+      "label": "Price (₹)",
+      "default": 399
+    },
+    {
+      "type": "textarea",
+      "id": "note_text",
+      "label": "Note Text",
+      "default": "30 gummies · 30 days · For kids 2+ · Free from artificial colours, flavours & preservatives."
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Product Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+}
+{% endschema %}
